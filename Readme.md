@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Алексеева](https://up.htmlacademy.ru/adaptive/14/user/16605).
-* Наставник: `Дмитрий Шамрило`.
+* Наставник: [Дмитрий Шамрило](https://up.htmlacademy.ru/adaptive/14/user/59460).
 
 ---
 
