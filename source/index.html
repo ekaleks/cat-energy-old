@@ -1,108 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <title>Функциональное питание для котов</title>  
   </head>
   <body>
-    <header class = "page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="" height="" alt="">
-        <div class = "page-header__logo-caption logo-caption logo-caption--size-small">
-          <strong>Cat</strong> energy
-        </div>
-      </a>
-      <nav class = "main-nav">
-        <button class="main-nav__toggle" type="button">
-        </button> 
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <a class="main-nav__link">
+            <img class="main-nav__image" src="#" width="" height="" alt="">
+          </a> 
+          <a class="main-nav__link">
+            <img class="main-nav__image logo-site" src="#" width="" height="" alt="">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--cross" type="button"></button>
+        </div>  
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>  
       </nav>
-    </header>
-    
-    <main class = "page-main">
-      <section class = "presentation">
-        <h1 class = "presentation__title">Функциональное питание для котов</h1>
-        <div class = "presentation__slogan">Занялся собой? Займись котом!</div>
-        <img class = "presentation__image" src = "#" width = "" height = "" alt = "">
-        <a class = "presentation__link" href = "form.html">Подобрать программу</a>
-      </section>
-      <section class = "catalog-list">
-        <article class = "catalog-list__item">
-          <img class = "catalog-list__image" src = "#" width = "" height = "" alt = "">
-          <h2 class = "catalog-list__title">Похудение</h2>
-          <p class = "catalog-list__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес. </p>
-          <a class = "catalog-list__link" href = "">Каталог Slim</a>       
-        </article>
-        <article class = "catalog-list__item">
-          <img class = "catalog-list__image" src = "#" width = "" height = "" alt = "">
-          <h2 class = "catalog-list__title">Набор массы</h2>
-          <p class = "catalog-list__text">Заработать авторитет среди дворовых котов и даже собак?
+    </header>   
+    <main class="page-main">
+      <article class="presentation">
+        <h1 class="presentation__title">Функциональное питание для котов</h1>
+        <div class="presentation__slogan">Занялся собой? Займись котом!</div>
+        <img class="presentation__image" src="#" width="" height="" alt="">
+        <a class="presentation__link" href="form.html">Подобрать программу</a>
+      </article>
+      <section class="catalog-directory">
+        <div class="catalog-directory__item">
+          <img class="catalog-directory__image" src="#" width="" height="" alt="">
+          <h3 class="catalog-directory__title">Похудение</h3>
+          <p class="catalog-directory__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес. </p>
+          <a class="catalog-directory__link" href="">Каталог Slim</a>       
+        </div>
+        <div class="catalog-directory__item">
+          <img class="catalog-directory__image" src="#" width="" height="" alt="">
+          <h3 class="catalog-directory__title">Набор массы</h3>
+          <p class="catalog-directory__text">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class = "catalog-list__link" href = "">Каталог Pro</a>
-        </article>
+          <a class="catalog-directory__link" href="">Каталог Pro</a>
+        </div>
       </section>
-      <section class = "features"> 
-      <h1 class = "features__title">Как это работает</h1>
-        <ul class = "features__list">
-          <li class = "features__item">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class = "features__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class = "features__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class = "features__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+      <section class="features"> 
+      <h2 class="features__title">Как это работает</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--icon-leaf">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="features__item features__item--icon-liquid">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="features__item features__item--icon-cutlery">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="features__item features__item--icon-alarm">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ul>     
       </section>
-      
-      <section class = "results">
-        <h2 class = "results__title">Живой пример</h2>
-        <p class = "results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class = "results__list">
-          <li class = "results__item">
-            5 кг <span>снижение  веса</span>
+      <section class="results">
+        <h2 class="results__title">Живой пример</h2>
+        <p class="results__text-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <ul class="results__list">
+          <li class="results__item">
+            <b class="results__text-max">5 кг</b>
+            <span class="results__text-min">снижение  веса</span>
           </li>
-          <li class = "results__item">
-            60 дней<span>затрачено  времени</span>
+          <li class="results__item">
+            <b class="results__text-max">60 дней</b>
+            <span class="results__text-min">затрачено  времени</span>
           </li>
         </ul>
-        <div class = "results__text results_text--big-size">Затраты на питание: 15 000 руб.</div>
-        <div class = "results__slider slider">
-          <img class = "slider__slide" src = "#" width = "" height = "" alt = "">
-          <img class = "slider__slide slider__slide--show" src = "#" width = "" height = "" alt = "">
-          <div class = "slider__toggle">         
-            <button class = "slider__button" type="button">Было</button>
-            <div class = "slider__scale">
-            <div class = "slider__scale-left"></div>
-            <div class = "slider__scale-right"></div>
-            </div>
-            <button class = "slider__button" type="button">Стало</button>
+        <div class="results__text">Затраты на питание: 15 000 руб.</div>
+        <div class="results__slider slider">
+          <img class="slider__slide" src="#" width="" height="" alt="">
+          <img class="slider__slide slider__slide--show" src="#" width="" height="" alt="">
+          <div class="slider__toggle">         
+            <button class="slider__button" type="button">Было</button>
+            <div class="slider__scale"></div>
+            <button class="slider__button" type="button">Стало</button>
           </div>
         </div>
       </section>
-    
     </main>
-    
-    <footer class = "page-footer">
-      <section class = "page-footer__contacts contacts contacts--white ">
-        <b class = "contacts__notification">Приглашаем к сотрудничеству дилеров!</b>
-        <p class = "contacts__text">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+    <footer class="page-footer">
+      <section class="page-footer__contacts contacts contacts--light ">
+        <b class="contacts__notification">Приглашаем к сотрудничеству дилеров!</b>
+        <address class="contacts__text">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</address>
       </section>
-      <section class = "page-footer__map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB" width = "320" height = "360" frameborder="0"></iframe>
+      <section class="page-footer__map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB" width="320" height="360" frameborder="0"></iframe>
       </section>
-      <section class = "page-footer__logo-caption logo-caption logo-caption--size-large">
-          <strong>Cat</strong> energy
+      <section class="page-footer__logo">
+        <img class="logo-site" src="#" width="" height="" alt="">
       </section>
-      <section class = "page-footer__social social">
+      <section class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#"></a>
@@ -115,18 +111,10 @@
           </li>
         </ul>
       </section>
-      <section class = "page-footer__external-link external-link">
-        <ul class = "external-link__list">
-          <li class = "external-link__item">
-            <a class = "external-link__text" href = "https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-          <li class = "external-link__item">
-            <a class = "external-link__logo" href = "https://htmlacademy.ru/intensive/adaptive"></a>
-          </li>
-        </ul>  
+      <section class="page-footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </section>
-      
-    
     </footer>
   </body>
 </html>
