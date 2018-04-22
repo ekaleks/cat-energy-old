@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Подбор программы</title>  
+    <title>Подбор программы</title>
   </head>
   <body>
     <header class="page-header">
@@ -10,70 +10,70 @@
         <div class="main-nav__logo">
           <a class="main-nav__link">
             <img class="main-nav__image" src="#" width="" height="" alt="">
-          </a> 
+          </a>
           <a class="main-nav__link">
             <img class="main-nav__image logo-site" src="#" width="" height="" alt="">
           </a>
           <button class="main-nav__toggle main-nav__toggle--cross" type="button"></button>
-        </div>  
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="main-nav__link">Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>  
+        </div>
       </nav>
     </header>
     <main class="page-main">
       <section class="program">
         <h2 class="program__title">Подбор программы</h2>
-        <p class="program__text">Заполните    анкету и мы подберем программу питания для вашего кота</p>    
+        <p class="program__text">Заполните    анкету и мы подберем программу питания для вашего кота</p>
         <form class="program__form form-selection" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="form-selection__">
-          <label class="form-selection__label" for="name">Имя:*</label>
-          <input class="form-selection__field" type="text" name="name" id="name" placeholder ="Барсик">
-          <label class="form-selection__label" for="weight">Вес(кг):</label>
-          <input class="form-selection__field" type="text" name="weight" id="weight" placeholder="7">
-          <label class="form-selection__label" for="age">Возраст(лет):*</label>
-          <input class="form-selection__field" type="text" name="age" id="age" placeholder="7">
-        </fieldset>
-        <fieldset class="form-selection__radio">
-          <input class="form-selection__field" type="radio" name="program" value="lose-weight" id="lose-weight" checked>
-          <label class="form-selection__label" for="lose-weight">Похудение</label>
-          <input class="form-selection__field" type="radio" name="program" value="set-weight" id="set-weight" >
-          <label class="form-selection__label" for="set-weight">Набор массы</label>
-          <input class="form-selection__field" type="radio" name="program" value="unknown" id="unknown" >
-          <label class="form-selection__label" for="unknown">Не знаю(нужен ваш совет)</label>
-        </fieldset>  
-        <fieldset class="form-selection__contacts"> 
-        <h2 class="form-selection__title" > Контактные данные (владельца кота)</h2>
-          <label class ="form-selection__label" for="email">E-mail:*</label>
-          <input class="form-selection__field" type="email" placeholder="kuklachev@gmail.com" id="email">
-          <label class="form-selection__label" for="tel">Телефон:*</label>
-          <input class="form-selection__field" type="tel" placeholder="8-(960)-960-60-90" id="tel">
-        </fieldset> 
-        <fieldset class="form-selection__comment">   
-          <h2 class="form-selection__title" >Комментарий</h2>
-          <input type="text" placeholder="Расскажите обо всех повадках кота" >
-        </fieldset>  
-        <fieldset class="form-selection__checkbox"> 
-          <h2 class="form-selection__title" >Дополнительно</h2>
-          <label class ="form-selection__label" for="sweetener">Сахарозаменитель</label>
-          <input class="form-selection__field" type="checkbox" name="sweetener" id="sweetener" checked>
-          <label class ="form-selection__label" for="water">Питьевая вода</label>
-          <input class="form-selection__field" type="checkbox" name="water" id="water">
-          <label class ="form-selection__label" for="milk">Молоко</label>
-          <input class="form-selection__field" type="checkbox" name="milk" id="milk">
-          <label class ="form-selection__label" for="vitamins">Витамины</label>
-          <input class="form-selection__field" type="checkbox" name="vitamins" id="vitamins">
-        </fieldset> 
+          <fieldset class="form-selection__input">
+            <label class="form-selection__label" for="name">Имя:*</label>
+            <input class="form-selection__field" type="text" name="name" id="name" placeholder ="Барсик">
+            <label class="form-selection__label" for="weight">Вес(кг):</label>
+            <input class="form-selection__field" type="text" name="weight" id="weight" placeholder="7">
+            <label class="form-selection__label" for="age">Возраст(лет):*</label>
+            <input class="form-selection__field" type="text" name="age" id="age" placeholder="7">
+          </fieldset>
+          <fieldset class="form-selection__radio">
+            <input class="form-selection__field" type="radio" name="program" value="lose-weight" id="lose-weight" checked>
+            <label class="form-selection__label" for="lose-weight">Похудение</label>
+            <input class="form-selection__field" type="radio" name="program" value="set-weight" id="set-weight" >
+            <label class="form-selection__label" for="set-weight">Набор массы</label>
+            <input class="form-selection__field" type="radio" name="program" value="unknown" id="unknown" >
+            <label class="form-selection__label" for="unknown">Не знаю(нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="form-selection__contacts">
+            <h3 class="form-selection__title" > Контактные данные (владельца кота)</h3>
+            <label class ="form-selection__label" for="email">E-mail:*</label>
+            <input class="form-selection__field" type="email" placeholder="kuklachev@gmail.com" id="email">
+            <label class="form-selection__label" for="tel">Телефон:*</label>
+            <input class="form-selection__field" type="tel" placeholder="8-(960)-960-60-90" id="tel">
+          </fieldset>
+          <fieldset class="form-selection__comment">
+            <h3 class="form-selection__title" >Комментарий</h3>
+            <input type="text" placeholder="Расскажите обо всех повадках кота" >
+          </fieldset>
+          <fieldset class="form-selection__checkbox">
+            <h3 class="form-selection__title" >Дополнительно</h3>
+            <label class ="form-selection__label" for="sweetener">Сахарозаменитель</label>
+            <input class="form-selection__field" type="checkbox" name="sweetener" id="sweetener" checked>
+            <label class ="form-selection__label" for="water">Питьевая вода</label>
+            <input class="form-selection__field" type="checkbox" name="water" id="water">
+            <label class ="form-selection__label" for="milk">Молоко</label>
+            <input class="form-selection__field" type="checkbox" name="milk" id="milk">
+            <label class ="form-selection__label" for="vitamins">Витамины</label>
+            <input class="form-selection__field" type="checkbox" name="vitamins" id="vitamins">
+          </fieldset>
           <button class="form-selection__button" type="button">Отправить заявку</button>
           <small class = "form-selection__note">* — Обязательные поля</small>
         </form>
