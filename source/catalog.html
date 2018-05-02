@@ -206,50 +206,52 @@
       </section>
       <section class="additional-catalog">
         <h2 class="additional-catalog__title">Дополнительные товары</h2>
-        <article class="additional-catalog__goods additional-goods">
-          <table class="additional-goods__table">
-            <caption class="additional-goods__subtitle"> Сахарозаменитель</caption>
-            <tr class="additional-goods__row">
-              <td class="additional-goods__cell-field">1 упаковка(100 г.)</td>
-              <td class="additional-goods__cell-value">100p.</td>
-            </tr>
-          </table>
-          <a class="additional-goods__button button" href="#">Заказать<a>
+        <div class = "additional-catalog__wrapper">
+          <article class="additional-catalog__goods additional-goods">
+            <table class="additional-goods__table">
+              <caption class="additional-goods__subtitle"> Сахарозаменитель</caption>
+              <tr class="additional-goods__row">
+                <td class="additional-goods__cell-field">1 упаковка(100 г.)</td>
+                <td class="additional-goods__cell-value">100p.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__button button" href="#">Заказать<a>
+          </article>
+          <article class="additional-catalog__goods additional-goods">
+            <table class="additional-goods__table">
+              <caption class="additional-goods__subtitle">Питьевая вода</caption>
+              <tr class="additional-goods__row">
+                <td class="additional-goods__cell-field">5 литров.</td>
+                <td class="additional-goods__cell-value">50p.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__button button" href="#">Заказать<a>
+          </article>
+          <article class="additional-catalog__goods additional-goods">
+            <table class="additional-goods__table">
+              <caption class="additional-goods__subtitle">Молоко</caption>
+              <tr class="additional-goods__row">
+                <td class="additional-goods__cell-field">1 литр.</td>
+                <td class="additional-goods__cell-value">50p.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__button button" href="#">Заказать<a>
+          </article>
+          <article class="additional-catalog__goods additional-goods">
+            <table class="additional-goods__table">
+              <caption class="additional-goods__subtitle">Витамины</caption>
+              <tr class="additional-goods__row">
+                <td class="additional-goods__cell-field">1 упаковка(30 г.)</td>
+                <td class="additional-goods__cell-value">50p.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__button button" href="#">Заказать<a>
+          </article>
+        </div>
+        <article class="additional-catalog__gift gift">
+          <img class="gift__image" src="#">
+          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
         </article>
-        <article class="additional-catalog__goods additional-goods">
-          <table class="additional-goods__table">
-            <caption class="additional-goods__subtitle">Питьевая вода</caption>
-            <tr class="additional-goods__row">
-              <td class="additional-goods__cell-field">5 литров.</td>
-              <td class="additional-goods__cell-value">50p.</td>
-            </tr>
-          </table>
-          <a class="additional-goods__button button" href="#">Заказать<a>
-        </article>
-        <article class="additional-catalog__goods additional-goods">
-          <table class="additional-goods__table">
-            <caption class="additional-goods__subtitle">Молоко</caption>
-            <tr class="additional-goods__row">
-              <td class="additional-goods__cell-field">1 литр.</td>
-              <td class="additional-goods__cell-value">50p.</td>
-            </tr>
-          </table>
-          <a class="additional-goods__button button" href="#">Заказать<a>
-        </article>
-        <article class="additional-catalog__goods additional-goods">
-          <table class="additional-goods__table">
-            <caption class="additional-goods__subtitle">Витамины</caption>
-            <tr class="additional-goods__row">
-              <td class="additional-goods__cell-field">1 упаковка(30 г.)</td>
-              <td class="additional-goods__cell-value">50p.</td>
-            </tr>
-          </table>
-          <a class="additional-goods__button button" href="#">Заказать<a>
-        </article>
-      </section>
-      <section class="gift">
-        <img class="gift__image" src="#">
-        <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
     </main>
     <footer class="page-footer">
@@ -260,26 +262,28 @@
       <section class="page-footer__map">
         <iframe src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB" width="320" height="360" frameborder="0"></iframe>
       </section>
-      <section class="page-footer__logo">
-        <img class="logo-site" src="#" width="" height="" alt="">
-      </section>
-      <section class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="page-footer__copyright copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
-      </section>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img class="logo-site" src="#" width="" height="" alt="">
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

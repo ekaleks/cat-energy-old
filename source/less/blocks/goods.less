@@ -1,4 +1,5 @@
 .goods {
+  width:280px;
   padding-top: 25px;
   padding-bottom: 22px;
   border-top: 1px solid @border-grey;
@@ -6,4 +7,17 @@
   color: @grey-font;
   font-size: 12px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .goods {
+    width:324px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .goods {
+    width:245px;
+  }
 }

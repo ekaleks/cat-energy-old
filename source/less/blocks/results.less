@@ -1,10 +1,55 @@
 .results {
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile-container;
   padding-top: 32px;
   padding-bottom: 38px;
   background-color: @grey-background;
   color: @grey-font;
   font-size: 14px;
   line-height: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.results__list{
+  width:280px;
+  order: 1;
+}
+
+.results__slider{
+  width:280px;
+  order: 2;
+}
+
+@media (min-width: @tablet-width){
+  .results {
+    .tablet-container;
+    flex-direction: column;
+  }
+
+  .results__list{
+    width:708px;
+    order: 1;
+  }
+
+  .results__slider{
+    width:708px;
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .results {
+    .desktop-container;
+    flex-direction: row;
+  }
+
+  .results__list{
+    width:610px;
+    order: 1;
+  }
+
+  .results__slider{
+    width:610px;
+    order: 1;
+  }
 }

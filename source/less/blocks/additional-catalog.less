@@ -1,8 +1,33 @@
 .additional-catalog {
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile-container;
   background-color: @white;
   color: @grey-font;
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-catalog {
+    .tablet-container;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-catalog {
+    .desktop-container;
+    flex-direction: row;
+  }
+
+  .additional-catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-catalog__title{
+    width:1220px;
+  }
 }

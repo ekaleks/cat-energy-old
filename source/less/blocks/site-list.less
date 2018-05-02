@@ -1,9 +1,25 @@
 .site-list {
-  padding-left: 20px;
-  padding-right: 20px;
+  list-style: none;
+  padding:0;
+  margin:0;
   background-color: @white;
   color: @black;
   .oswald;
   font-size: 20px;
   line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width){
+  .site-list {
+    flex-direction: row;
+
+  }
+}
+
+@media (min-width: @desktop-width){
+  .site-list {
+    flex-direction: row;
+  }
 }

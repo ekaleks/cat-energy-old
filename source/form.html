@@ -76,8 +76,10 @@
             <label class ="form-selection__label" for="vitamins">Витамины</label>
             <input class="form-selection__field" type="checkbox" name="vitamins" id="vitamins">
           </fieldset>
-          <button class="form-selection__button">Отправить заявку</button>
-          <small class = "form-selection__note">* — Обязательные поля</small>
+          <fieldset class="form-selection__submit">
+            <button class="form-selection__button">Отправить заявку</button>
+            <small class = "form-selection__note">* — Обязательные поля</small>
+          </fieldset>
         </form>
       </section>
     </main>
@@ -89,26 +91,28 @@
       <section class="page-footer__map">
         <iframe src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB" width="320" height="360" frameborder="0"></iframe>
       </section>
-      <section class="page-footer__logo">
-        <img class="logo-site" src="#" width="" height="" alt="">
-      </section>
-      <section class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="page-footer__copyright copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
-      </section>
+      <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <img class="logo-site" src="#" width="" height="" alt="">
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          </div>
+        </div>
     </footer>
   </body>
 </html>

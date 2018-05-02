@@ -1,10 +1,43 @@
 .contacts {
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile-container;
   padding-top: 32px;
   padding-bottom: 29px;
   background-color: @white;
   color: @grey-font;
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts__notification {
+  order: 1;
+}
+
+.contacts__text {
+  order: 2;
+}
+
+@media (min-width: @tablet-width){
+  .contacts {
+    .tablet-container;
+  }
+
+  .contacts__notification {
+    order: 1;
+  }
+
+  .contacts__text {
+    order: 2;
+  }
+
+}
+
+@media (min-width: @desktop-width){
+  .contacts {
+    display: block;
+    width: 570px;
+    position: absolute;
+  }
+
 }
