@@ -1,6 +1,5 @@
 .gift {
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile-container;
   padding-top: 64px;
   padding-bottom: 45px;
   margin-bottom: 35px;
@@ -9,9 +8,21 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% auto;
-  width: 280px;
   min-height: 290px;
   color: @white;
   font-size: 12px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    .tablet-container;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    width: 245px;
+    margin: 0;
+  }
 }

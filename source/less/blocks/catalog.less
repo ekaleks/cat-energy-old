@@ -1,6 +1,5 @@
 .catalog {
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile-container;
   padding-top: 33px;
   padding-bottom: 25px;
   border-bottom: 1px solid @border-grey;
@@ -9,4 +8,31 @@
   color: @grey-font;
   font-size: 14px;
   line-height: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    .tablet-container;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catalog__title {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    .desktop-container;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catalog__title {
+    width: 1220px;
+  }
 }

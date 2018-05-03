@@ -1,15 +1,38 @@
 .presentation {
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile-container;
   padding-top: 30px;
   padding-bottom: 0;
   background-color: @white;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 90%, 0 0;
+  background-size: 100% auto, 100% auto;
   min-height: 448px;
   color: @white;
-  font-family: "Oswald", "Arial", sans-serif;
+  .oswald;
   font-size: 14px;
   line-height: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    .tablet-container;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto, 100% auto;
+    min-height: 867px;
+    color: @black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation {
+    .desktop-container;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 0, 100% 0;
+    background-size: 50% auto, 50% auto;
+    color: @black;
+  }
 }
