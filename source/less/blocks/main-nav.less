@@ -1,21 +1,59 @@
 .main-nav {
-  .mobile-container;
-  background-color: @white;
+  margin: 0 auto;
+  width: 320px;
+  background-color: transparent;
   color: @black;
   .oswald;
   font-size: 20px;
   line-height: 20px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .main-nav__logo {
-  height: 65px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
   order: 1;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid @border-grey;
 }
 
-.main-nav__wrapper {
-  height: 200px;
+.main-nav__image {
+  width: 190px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 66px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-nav__toggle {
+  display: none;
+  width: 24px;
+  height: 20px;
+  margin-right: 20px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main-nav__toggle--cross {
+  display: block;
+  width: 24px;
+  height: 20px;
+  margin-right: 20px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.main-nav__list {
   order: 2;
 }
 
@@ -23,16 +61,31 @@
   .main-nav {
     .tablet-container;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .main-nav__logo {
-    height: 85px;
-    order: 1;
+    padding-top: 24px;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
-  .main-nav__wrapper {
-    height: 85;
-    order: 2;
+  .main-nav__image {
+    width: 175px;
+    height: 60px;
+    margin-right: 60px;
+    margin-left: 0;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle--cross {
+    display: none;
   }
 }
 
@@ -40,15 +93,29 @@
   .main-nav {
     .desktop-container;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .main-nav__logo {
-    height: 115px;
-    order: 1;
+    padding-top: 55px;
+    border-bottom: none;
   }
 
-  .main-nav__wrapper {
-    height: 115px;
-    order: 2;
+  .main-nav__image {
+    width: 200px;
+    height: 65px;
+    margin-right: 505px;
+    margin-left: 0;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle--cross {
+    display: none;
   }
 }

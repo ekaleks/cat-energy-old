@@ -3,12 +3,13 @@
   color: @grey-font;
   font-size: 14px;
   line-height: 16px;
+  position: relative;
 }
 
 .page-footer__map {
   width: 320px;
   margin: 0 auto;
-  height: 360px;
+  height: 362px;
   background-color: @white;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
@@ -24,8 +25,13 @@
 
 .page-footer__logo {
   order: 1;
-  padding-top: 38px;
-  padding-bottom: 31px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  min-height: 25px;
+  background-image: url("../img/logo-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 130px 25px;
 }
 
 .page-footer__social {
@@ -37,6 +43,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
   .page-footer__map {
     width: 768px;
     margin: 0 auto;
@@ -45,16 +56,36 @@
     background-image: url("../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 768px 395px;
   }
 
 
   .page-footer__wrapper {
     .tablet-container;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .page-footer__logo {
+    order: 1;
+    width: 130px;
+    height: 25px;
+    background-image: url("../img/logo-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 130px 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .page-footer__map {
     width: 1440px;
     margin: 0 auto;
@@ -65,9 +96,26 @@
     background-position: 0 0;
   }
 
+  .page-footer__social {
+    margin-left: 40px;
+  }
 
   .page-footer__wrapper {
     .desktop-container;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 33px;
+  }
+
+  .page-footer__logo {
+    order: 1;
+    width: 130px;
+    height: 25px;
+    background-image: url("../img/logo-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 130px 25px;
   }
 }

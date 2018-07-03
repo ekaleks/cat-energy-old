@@ -1,21 +1,108 @@
 .features {
   .mobile-container;
-  padding-top: 12px;
+  padding-top: 16px;
   padding-bottom: 42px;
-  background-color: @white;
+  background-color: transparent;
   color: @grey-font;
   font-size: 14px;
   line-height: 18px;
 }
 
+.features__title {
+  .oswald;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 200;
+  margin-bottom: 6px;
+  margin-top: 2px;
+}
+
 .features__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  position: relative;
+  margin-left: 60px;
+  margin-top: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.features__item--icon-leaf::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  background-color: @green;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features__item--icon-liquid::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  background-color: @green;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features__item--icon-cutlery::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  background-color: @green;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features__item--icon-alarm::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  background-color: @green;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 @media (min-width: @tablet-width) {
   .features {
     .tablet-container;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    padding-top: 4px;
+  }
+
+  .features__title {
+    .oswald;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    margin-top: 15px;
   }
 
   .features__list {
@@ -24,20 +111,195 @@
   }
 
   .features__item {
-    width: 324px;
+    z-index: 3;
+    width: 224px;
+    min-height: 70px;
+    padding-top: 115px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 100px;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .features__item--icon-leaf {
+    margin-right: 30px;
+  }
+
+  .features__item--icon-liquid {
+    margin-left: 30px;
+  }
+
+  .features__item--icon-cutlery {
+    margin-right: 30px;
+  }
+
+  .features__item--icon-alarm {
+    margin-left: 30px;
+  }
+
+  .features__item--icon-leaf::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .features__item--icon-liquid::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .features__item--icon-cutlery::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .features__item--icon-alarm::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .features__item--icon-leaf::after {
+    content: "1";
+    position: absolute;
+    top: 90px;
+    left: 118px;
+    z-index: -1;
+    .oswald;
+    font-size: 281px;
+    color: @grey-background;
+  }
+
+  .features__item--icon-liquid::after {
+    content: "2";
+    position: absolute;
+    top: 90px;
+    left: 118px;
+    z-index: -1;
+    .oswald;
+    font-size: 281px;
+    color: @grey-background;
+  }
+
+  .features__item--icon-cutlery::after {
+    content: "3";
+    position: absolute;
+    top: 90px;
+    left: 118px;
+    z-index: -1;
+    .oswald;
+    font-size: 281px;
+    color: @grey-background;
+  }
+
+  .features__item--icon-alarm::after {
+    content: "4";
+    position: absolute;
+    top: 90px;
+    left: 118px;
+    z-index: -1;
+    .oswald;
+    font-size: 281px;
+    color: @grey-background;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features {
     .desktop-container;
+    padding-top: 26px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features__title {
+    .oswald;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .features__list {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .features__item {
-    width: 245px;
+    min-height: 70px;
+    padding-top: 115px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 35px;
+    margin-right: 80px;
+    margin-left: 0;
+  }
+
+  .features__item--icon-leaf {
+    margin-left: 0;
+  }
+
+  .features__item--icon-liquid {
+    margin-left: 0;
+  }
+
+  .features__item--icon-cutlery {
+    margin-left: 0;
+  }
+
+  .features__item--icon-alarm {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .features__item--icon-leaf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .features__item--icon-liquid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .features__item--icon-cutlery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .features__item--icon-alarm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
   }
 }

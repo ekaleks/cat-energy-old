@@ -1,28 +1,107 @@
 .gift {
-  .mobile-container;
-  padding-top: 64px;
+  padding-top: 65px;
   padding-bottom: 45px;
-  margin-bottom: 35px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  width: 280px;
   background-color: @green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 100% auto;
-  min-height: 290px;
+  background-size: 280px 290px;
+  min-height: 180px;
   color: @white;
   font-size: 12px;
   line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.gift__image {
+  order: 1;
+  align-self: center;
+  width: 57px;
+  height: 62px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 57px 62px;
+}
+
+.gift__text {
+  text-align: center;
+  width: 162px;
+  margin-bottom: 0;
+  margin-top: 0;
+  order: 2;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .gift {
-    .tablet-container;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 90px;
+    padding-right: 123px;
+    width: 495px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: @green;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 708px 200px;
+  }
+
+  .gift__image {
+    width: 57px;
+    height: 62px;
+    order: 1;
+  }
+
+  .gift__text {
+    padding-top: 15px;
+    text-align: left;
+    order: 2;
   }
 }
 
 @media (min-width: @desktop-width) {
   .gift {
     width: 245px;
-    margin: 0;
+    height: 185px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 64px;
+    padding-bottom: 42px;
+    margin-top: 49px;
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: @green;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 245px 290px;
+  }
+
+  .gift__image {
+    order: 1;
+  }
+
+  .gift__text {
+    text-align: center;
+    padding-top: 0;
+    order: 2;
   }
 }

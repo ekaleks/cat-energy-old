@@ -1,7 +1,7 @@
 .goods {
-  width: 280px;
-  padding-top: 25px;
-  padding-bottom: 22px;
+  .mobile-container;
+  padding-top: 0;
+  padding-bottom: 34px;
   border-top: 1px solid @border-grey;
   background-color: @white;
   color: @grey-font;
@@ -9,14 +9,224 @@
   line-height: 16px;
 }
 
+.goods__link {
+  text-decoration: none;
+}
+
+.goods__image {
+  float: left;
+}
+
+.goods__title {
+  margin-top: 19px;
+  margin-bottom: 0;
+  .oswald;
+  color: @black;
+  font-size: 16px;
+  line-height: 20px;
+  padding-right: 60px;
+  text-transform: uppercase;
+}
+
+.goods__table {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.goods__cell-field {
+  order: 1;
+}
+
+.goods__cell-value {
+  order: 2;
+}
+
+.goods__button {
+  .oswald;
+  color: @white;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 109px;
+  padding-right: 109px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
 @media (min-width: @tablet-width) {
   .goods {
+    height: 475px;
     width: 324px;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: none;
+    padding-bottom: 0;
+    margin-right: 30px;
+    margin-left: 0;
+    padding-top: 95px;
+    background-image: linear-gradient(to bottom, @white 140px, @grey-background 140px, @grey-background 430px);
+  }
+
+  .goods--even {
+    height: 515px;
+    margin-left: 30px;
+    margin-right: 0;
+    padding-top: 55px;
+  }
+
+  .goods__image {
+    float: none;
+  }
+
+  .goods__title {
+    margin-top: 35px;
+    margin-bottom: 0;
+    .oswald;
+    color: @black;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 200;
+    padding-right: 95px;
+    padding-left: 95px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .goods__table {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .goods__row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-bottom: 1px solid @border-grey;
+  }
+
+  .goods__cell-field {
+    order: 1;
+  }
+
+  .goods__cell-value {
+    order: 2;
+  }
+
+  .goods__button {
+    display: block;
+    width: 62px;
+    .oswald;
+    color: @white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 94px;
+    padding-right: 94px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .goods {
+    height: 482px;
     width: 245px;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: none;
+    padding-bottom: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+    padding-top: 93px;
+    background-image: linear-gradient(to bottom, @white 142px, @grey-background 142px, @grey-background 433px);
+  }
+
+  .goods--even {
+    height: 517px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 58px;
+  }
+
+  .goods__image {
+    float: none;
+  }
+
+  .goods__title {
+    margin-top: 35px;
+    margin-bottom: 0;
+    .oswald;
+    color: @black;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 200;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .goods__table {
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .goods__row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid @border-grey;
+  }
+
+  .goods__cell-field {
+    order: 1;
+  }
+
+  .goods__cell-value {
+    order: 2;
+  }
+
+  .goods__button {
+    display: block;
+    width: 65px;
+    .oswald;
+    color: @white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
   }
 }

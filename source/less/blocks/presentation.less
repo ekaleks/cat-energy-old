@@ -1,38 +1,139 @@
 .presentation {
   .mobile-container;
   padding-top: 30px;
-  padding-bottom: 0;
-  background-color: @white;
+  padding-bottom: 10px;
+  background-color: transparent;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 90%, 0 0;
-  background-size: 100% auto, 100% auto;
-  min-height: 448px;
+  background-position: 50% 166px, 0 0;
+  background-size: 275px 270px, 320px auto;
   color: @white;
   .oswald;
   font-size: 14px;
   line-height: 14px;
 }
 
+.presentation__title {
+  margin-top: -2px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 200;
+  color: @white;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.presentation__slogan {
+  .oswald;
+  text-transform: uppercase;
+  margin-bottom: 314px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 200;
+  text-align: center;
+  color: @white;
+}
+
+.presentation__link {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-left: 73px;
+  padding-right: 73px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (min-width: @tablet-width) {
   .presentation {
     .tablet-container;
+    padding-bottom: 546px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto, 100% auto;
-    min-height: 867px;
+    background-position: 30px 255px;
+    background-size: 710px 610px;
     color: @black;
+  }
+
+  .presentation__title {
+    margin-bottom: 43px;
+    margin-top: 25px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 200;
+    color: @black;
+    padding-right: 200px;
+    padding-left: 90px;
+    text-align: left;
+  }
+
+  .presentation__slogan {
+    .oswald;
+    text-transform: uppercase;
+    margin-left: 90px;
+    margin-bottom: 62px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 200;
+    text-align: left;
+    color: @black;
+  }
+
+  .presentation__link {
+    text-transform: uppercase;
+    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .presentation {
     .desktop-container;
-    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 50% 0, 100% 0;
-    background-size: 50% auto, 50% auto;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 560px 25px;
+    background-size: 550px 500px;
     color: @black;
+    padding-bottom: 285px;
+  }
+
+  .presentation__title {
+    margin-top: 75px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 200;
+    color: @black;
+    padding-right: 725px;
+    padding-left: 80px;
+    text-align: left;
+  }
+
+  .presentation__slogan {
+    .oswald;
+    text-transform: uppercase;
+    margin-left: 80px;
+    margin-bottom: 67px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 200;
+    text-align: left;
+    color: @black;
+  }
+
+  .presentation__link {
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-left: 80px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
