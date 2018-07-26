@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .form-selection__label-input {
@@ -281,7 +281,8 @@
   padding-bottom: 110px;
   width: 250px;
   min-height: 40px;
-  border: 1px solid @border-grey;
+  border: 1px solid @border-grey; 
+  outline: none;
   font-size: 16px;
   font-weight: 200;
   line-height: 18px;
@@ -289,7 +290,8 @@
   text-transform: uppercase;
 }
 
-.form-selection__field-comments::placeholder {
+.form-selection__field-comments::placeholder { 
+  .oswald;
   font-size: 16px;
   font-weight: 200;
   line-height: 18px;
@@ -944,6 +946,7 @@
   }
 
   .form-selection__field-comments::placeholder {
+    .oswald;
     font-size: 20px;
     font-weight: 200;
     line-height: 30px;
