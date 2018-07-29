@@ -29,6 +29,10 @@
   width: 140px;
 }
 
+.contacts--dark{
+  background-color: @grey-background;
+}
+
 @media (min-width: @tablet-width) {
   .contacts {
     .tablet-container;
@@ -36,7 +40,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 65px;
     padding-bottom: 59px;
   }
 
@@ -60,6 +64,10 @@
 
   .contacts__text-town--space {
     margin-top: 20px;
+  }
+
+  .contacts--dark{
+    background-color: @grey-background;
   }
 }
 
@@ -93,6 +101,7 @@
   .contacts__text {
     order: 2;
     font-style: normal;
+    text-align: left;
     font-size: 16px;
     line-height: 20px;
     width: 155px;
