@@ -26,6 +26,14 @@
   text-transform: uppercase;
 }
 
+.site-list__link:hover {
+  color: #707070;
+}
+
+.site-list__link:active {
+  color: #b7b7b7;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     flex-direction: row;
@@ -75,6 +83,14 @@
 
     .site-list__link {
       color: @white;
+    }
+
+    .site-list__link:hover {
+      color: #a9cf92;
+    }
+
+    .site-list__link:active {
+      color: #94c377;
     }
 
     .site-list__item--active::after {
