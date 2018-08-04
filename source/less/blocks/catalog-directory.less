@@ -79,6 +79,10 @@
   color: @black;
   font-size: 16px;
   line-height: 16px;
+} 
+
+.catalog-directory__link:active {
+  color: #c5c6c6;
 }
 
 .catalog-directory__link--arrow::before {
@@ -91,6 +95,17 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 23px 12px
+}
+
+.catalog-directory__link--arrow:hover::before {
+  width: 33px;
+  background-size: 33px 12px;
+}
+
+.catalog-directory__link--arrow:active::before {
+  width: 33px;
+  background-size: 33px 12px;
 }
 
 @media (min-width: @tablet-width) {
