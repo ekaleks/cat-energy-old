@@ -33,6 +33,14 @@
   background-size: 130px 25px;
 }
 
+.page-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo:active {
+  opacity: 0.6;
+}
+
 .page-footer__social {
   order: 2;
 }
@@ -83,10 +91,16 @@
   .page-footer {
     padding-top: 0;
     padding-bottom: 0;
-    position: relative;
+  }
+
+  .page-footer__contacts {
+    position: absolute;
+    top: 94px;
+    left: 148px;
   }
 
   .page-footer__map {
+    position: relative;
     width: 1440px;
     margin: 0 auto;
     height: 400px;

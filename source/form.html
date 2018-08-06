@@ -38,15 +38,15 @@
             <ul class="form-selection__list-input">
               <li class="form-selection__item-input">
                 <label class="form-selection__label-input form-selection__label-input--name" for="name">Имя:*</label>
-                <input class="form-selection__field-input form-selection__field-input--name" type="text" name="name" id="name" placeholder="Барсик">
+                <input class="form-selection__field-input form-selection__field-input--name" type="text" name="name" id="name" placeholder="Барсик" pattern="^[А-Яа-яЁё\s]+$">
               </li>
               <li class="form-selection__item-input">
                 <label class="form-selection__label-input form-selection__label-input--weight" for="weight">Вес (кг):*</label>
-                <input class="form-selection__field-input form-selection__field-input--weight" type="text" name="weight" id="weight" placeholder="7">
+                <input class="form-selection__field-input form-selection__field-input--weight" type="text" name="weight" id="weight" placeholder="7" pattern="[0-9]{1,2}">
               </li>
               <li class="form-selection__item-input">
                 <label class="form-selection__label-input form-selection__label-input--age" for="age">Возраст (лет):</label>
-                <input class="form-selection__field-input form-selection__field-input--age" type="text" name="age" id="age" placeholder="7">
+                <input class="form-selection__field-input form-selection__field-input--age" type="text" name="age" id="age" placeholder="7" pattern="[0-9]{1,2}">
               </li>
             </ul>
           </fieldset>
@@ -75,7 +75,7 @@
               </li>
               <li class="form-selection__item-contacts">
                 <label class="form-selection__label-contacts form-selection__label-contacts--tel" for="phone">Телефон:*</label>
-                <input class="form-selection__field-contacts form-selection__field-contacts--phone" type="phone" placeholder="8 (960) 960-60-90" id="phone">
+                <input class="form-selection__field-contacts form-selection__field-contacts--phone" type="tel" placeholder="8 (960) 960-60-90" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
               </li>
             </ul>
           </fieldset>
@@ -118,11 +118,11 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts contacts--dark">
-        <b class="contacts__notification">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
-        <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 <div class="contacts__text-town contacts__text-town--space">Санкт-Петербург</div></address>
-      </section>
       <section class="page-footer__map">
+        <div class="page-footer__contacts contacts contacts--dark">
+          <b class="contacts__notification">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+          <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 <div class="contacts__text-town contacts__text-town--space">Санкт-Петербург</div></address>
+        </div>>
         <iframe src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB" width="100%" height="100%" frameborder="0"></iframe>
       </section>
     <div class="page-footer__wrapper">
