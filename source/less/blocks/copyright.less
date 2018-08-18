@@ -17,14 +17,26 @@
   order: 1;
 }
 
+.copyright__text:active {
+  opacity: 0.3;
+}
+
 .copyright__logo {
   width: 27px;
   height: 35px;
   order: 2;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 27px 35px;
+}
+
+.copyright__logo-icon {
+  fill: #666666;
+}
+
+.copyright__logo-icon:hover {
+  fill: @green;
+}
+
+.copyright__logo-icon:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
