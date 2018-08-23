@@ -67,7 +67,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: "source",
           src: ["fonts/**/*.{woff2,woff}",
-                "img/**.{png,jpg,svg}",
+                "img/**.{png,jpg,svg,webp}",
                 "js/**.{js}"
           ],
           dest: "build"
@@ -142,9 +142,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask("build", ["clean", "copy", "less", "postcss", "csso", "svgstore", "posthtml" ]);
+  grunt.registerTask("build", ["imagemin", "cwebp", "clean", "copy", "less", "postcss", "csso", "svgstore", "posthtml" ]);
 
-  grunt.registerTask("default", ["cwebp"]);
-  grunt.registerTask("default", ["imagemin"]);
   grunt.registerTask("serve", ["browserSync", "watch"]);
 };
