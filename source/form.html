@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы</title>
+    <link rel="preload" href="oswaldmedium.woff2" as="font">
+    <link rel="preload" href="oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page-body">
@@ -14,20 +15,18 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <a class="main-nav__link" href="index.html">
-            <div class="main-nav__image"></div>
-          </a>
-          <a class="main-nav__toggle main-nav__toggle--cross" href=""></a>
+          <a class="main-nav__link-image" href="index.html" title="Логотип"></a>
+          <a class="main-nav__toggle main-nav__toggle--cross" href = "#" title="Кнопка открытия и закрытия меню"></a>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html" title="Пункт меню-главная">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html" title="Пункт меню-каталог продукции">Каталог продукции</a>
           </li>
-          <li class="site-list__item  site-list__item--active">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="form.html" title="Пункт меню-подбор программы">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -41,31 +40,31 @@
             <ul class="form-selection__list-input">
               <li class="form-selection__item-input">
                 <label class="form-selection__label-input form-selection__label-input--name" for="name">Имя:*</label>
-                <input class="form-selection__field-input form-selection__field-input--name" type="text" name="name" id="name" placeholder="Барсик" pattern="^[А-Яа-яЁё\s]+$">
+                <input class="form-selection__field-input form-selection__field-input--name" type="text" name="name" id="name" placeholder="Барсик" pattern="^[А-Яа-яЁё\s]+$" title="Поле ввода имени">
               </li>
               <li class="form-selection__item-input">
                 <label class="form-selection__label-input form-selection__label-input--weight" for="weight">Вес (кг):*</label>
-                <input class="form-selection__field-input form-selection__field-input--weight" type="text" name="weight" id="weight" placeholder="7" pattern="[0-9]{1,2}">
+                <input class="form-selection__field-input form-selection__field-input--weight" type="text" name="weight" id="weight" placeholder="7" pattern="[0-9]{1,2}" title="Поле ввода веса">
               </li>
               <li class="form-selection__item-input">
                 <label class="form-selection__label-input form-selection__label-input--age" for="age">Возраст (лет):</label>
-                <input class="form-selection__field-input form-selection__field-input--age" type="text" name="age" id="age" placeholder="7" pattern="[0-9]{1,2}">
+                <input class="form-selection__field-input form-selection__field-input--age" type="text" name="age" id="age" placeholder="7" pattern="[0-9]{1,2}" title="Поле ввода возраста">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-selection__wrapper-radio">
             <ul class="form-selection__list-radio">
               <li class="form-selection__item-radio">
-                <input class="form-selection__field-radio" type="radio" name="program" value="lose-weight" id="lose-weight" checked="">
-                <label class="form-selection__label-radio" for="lose-weight">Похудение</label>
+                <input class="form-selection__field-radio" type="radio" name="program" value="lose-weight" id="lose-weight" checked>
+                <label class="form-selection__label-radio" for="lose-weight" title="Радиокнопка - похудение">Похудение</label>
               </li>
               <li class="form-selection__item-radio">
                 <input class="form-selection__field-radio" type="radio" name="program" value="set-weight" id="set-weight">
-                <label class="form-selection__label-radio" for="set-weight">Набор массы</label>
+                <label class="form-selection__label-radio" for="set-weight" title="Радиокнопка - набор массы">Набор массы</label>
               </li>
               <li class="form-selection__item-radio">
                 <input class="form-selection__field-radio" type="radio" name="program" value="unknown" id="unknown">
-                <label class="form-selection__label-radio" for="unknown">Не знаю (нужен ваш совет)</label>
+                <label class="form-selection__label-radio" for="unknown" title="Радиокнопка - нужен совет">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -74,43 +73,43 @@
             <ul class="form-selection__list-contacts">
               <li class="form-selection__item-contacts">
                 <label class="form-selection__label-contacts form-selection__label-contacts--mail" for="email">E-mail:*</label>
-                <input class="form-selection__field-contacts form-selection__field-contacts--mail" type="email" placeholder="kuklachev@gmail.com" id="email">
+                <input class="form-selection__field-contacts form-selection__field-contacts--mail" type="email" placeholder="kuklachev@gmail.com" id="email" title="Поле ввода электронной почты">
               </li>
               <li class="form-selection__item-contacts">
                 <label class="form-selection__label-contacts form-selection__label-contacts--tel" for="phone">Телефон:*</label>
-                <input class="form-selection__field-contacts form-selection__field-contacts--phone" type="tel" placeholder="8 (960) 960-60-90" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+                <input class="form-selection__field-contacts form-selection__field-contacts--phone" type="tel" placeholder="8 (960) 960-60-90" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" title="Поле ввода телефона">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-selection__wrapper-comments">
             <legend class="form-selection__title-comments">Комментарий</legend>
-            <input class="form-selection__field-comments" type="text" placeholder="Расскажите обо всех повадках кота">
+            <input class="form-selection__field-comments" type="text" placeholder="Расскажите обо всех повадках кота" title="Поле ввода комментария о повадках кота">
           </fieldset>
-          <fieldset class="form-selection__wrapper-checkbox">
+          <fieldset class="form-selection__wrapper-checkbox" title="Выбор дополнительных товаров">
             <legend class="form-selection__title-checkbox">Дополнительно</legend>
             <ul class="form-selection__list-checkbox">
               <li class="form-selection__item-checkbox">
-                <input class="form-selection__field-checkbox" type="checkbox" name="sweetener" id="sweetener" checked="">
-                <label class="form-selection__label-checkbox" for="sweetener">Сахарозаменитель</label>
+                <input class="form-selection__field-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="form-selection__label-checkbox" for="sweetener"  title="Сахарозаменитель">Сахарозаменитель</label>
               </li>
               <li class="form-selection__item-checkbox">
                 <input class="form-selection__field-checkbox" type="checkbox" name="water" id="water">
-                <label class="form-selection__label-checkbox" for="water">Питьевая вода</label>
+                <label class="form-selection__label-checkbox" for="water" title="Вода">Питьевая вода</label>
               </li>
               <li class="form-selection__item-checkbox">
                 <input class="form-selection__field-checkbox" type="checkbox" name="milk" id="milk">
-                <label class="form-selection__label-checkbox" for="milk">Молоко</label>
+                <label class="form-selection__label-checkbox" for="milk" title="Молоко">Молоко</label>
               </li>
               <li class="form-selection__item-checkbox">
                 <input class="form-selection__field-checkbox" type="checkbox" name="vitamins" id="vitamins">
-                <label class="form-selection__label-checkbox" for="vitamins">Витамины</label>
+                <label class="form-selection__label-checkbox" for="vitamins" title="Витамины">Витамины</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-selection__wrapper-submit">
             <ul class="form-selection__list-submit">
               <li class="form-selection__item-submit">
-                <button class="form-selection__button">Отправить заявку</button>
+                <button class="form-selection__button"  title="Кнопка отправки формы">Отправить заявку</button>
               </li>
               <li class="form-selection__item-submit">
                 <small class="form-selection__note">* — Обязательные поля</small>
@@ -121,51 +120,51 @@
       </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__map-wrapper">
-          <div class="page-footer__contacts contacts">
-            <b class="contacts__notification">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
-            <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 <div class="contacts__text-town contacts__text-town--space">Санкт-Петербург</div></address>
-          </div>
-          <div class="page-footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715867313!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1534102256961" class="page-footer__iframe"></iframe>
-          </div>
+      <div class="page-footer__map-wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__notification">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+          <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 <div class="contacts__text-town contacts__text-town--space">Санкт-Петербург</div></address>
         </div>
-        <div class="page-footer__wrapper">
-          <div class="page-footer__logo"></div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon-vkontakte" width="20" height="20">
-                  <use xlink:href="#icon-vk-mobile"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon-instagram" width="20" height="20">
-                  <use xlink:href="#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon-facebook" width="20" height="20">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="page-footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715867313!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1534102256961" class="page-footer__iframe" title="Интерактивная карта"></iframe>
         </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo-icon" width="27" height="35">
-              <use xlink:href="#htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
-        </div>
-      </footer>
+      </div>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html" title="Логотип"></a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" title="Кнопка - вконтакте">
+              <svg class="social__icon-vkontakte" width="20" height="20">
+                <use xlink:href="#icon-vk-mobile"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Кнопка - инстаграмм">
+              <svg class="social__icon-instagram" width="20" height="20">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Кнопка - фэйсбук ">
+              <svg class="social__icon-facebook" width="20" height="20">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка на сайт htmlacademy">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка-картинка на сайт htmlacademy">
+          <svg class="copyright__logo-icon" viewBox="0 0 50 65">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

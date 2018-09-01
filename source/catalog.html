@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог продукции</title>
+    <link rel="preload" href="oswaldmedium.woff2" as="font">
+    <link rel="preload" href="oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page-body">
@@ -14,20 +15,18 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <a class="main-nav__link" href="index.html">
-            <div class="main-nav__image"></div>
-          </a>
-          <a class="main-nav__toggle main-nav__toggle--cross" href=""></a>
+          <a class="main-nav__link-image" title="Логотип" href="index.html"></a>
+          <a class="main-nav__toggle main-nav__toggle--cross" href = "#" title="Кнопка открытия и закрытия меню"></a>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item  site-list__item--active">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link"  href="index.html" title="Пункт меню-главная">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+            <a class="site-list__link site-list__item--active" href="catalog.html" title="Пункт меню-каталог продукции">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html" title="Пункт меню-подбор программы">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +35,7 @@
       <section class="catalog">
         <h2 class="catalog__title">Каталог продукции</h2>
         <article class="catalog__goods goods">
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с курицей 500гр">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
@@ -47,7 +46,7 @@
               <img class="goods__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Корм с курицей">
             </picture>
           </a>
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с курицей 500гр">
             <h3 class="goods__title">Cat Energy  PRO 500 г</h3>
           </a>
           <table class="goods__table">
@@ -64,10 +63,10 @@
               <td class="goods__cell-value">700 Р.</td>
             </tr>
           </table>
-          <a class="goods__button button" href="#">Заказать</a>
+          <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <article class="catalog__goods goods goods--even">
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с курицей 1000гр">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
@@ -78,7 +77,7 @@
               <img class="goods__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobilet@2x.jpg 2x" alt="Корм с курицей">
             </picture>
           </a>
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с курицей 1000гр">
             <h3 class="goods__title">Cat Energy  PRO 1000 г</h3>
           </a>
           <table class="goods__table">
@@ -95,14 +94,14 @@
               <td class="goods__cell-value">1000 Р.</td>
             </tr>
           </table>
-          <a class="goods__button button" href="#">Заказать</a>
+          <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <article class="catalog__goods goods">
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с рыбой 500гр">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/chicken-fish-mobile@1x.webp, img/fish-small-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-small-mobile@1x.webp, img/fish-small-mobile@2x.webp 2x">
 
               <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
@@ -110,7 +109,7 @@
             </picture>
           </a>
           <a class="goods__link" href="#">
-            <h3 class="goods__title">Cat Energy  PRO 500 г</h3>
+            <h3 class="goods__title" title="Товар - корм с рыбой 500гр">Cat Energy  PRO 500 г</h3>
           </a>
           <table class="goods__table">
             <tr class="goods__row">
@@ -126,10 +125,10 @@
               <td class="goods__cell-value">700 Р.</td>
             </tr>
           </table>
-          <a class="goods__button button" href="#">Заказать</a>
+          <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <article class="catalog__goods goods goods--even">
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с рыбой 1000гр">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
@@ -140,7 +139,7 @@
               <img class="goods__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Корм с рыбой">
             </picture>
           </a>
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с рыбой 1000гр">
             <h3 class="goods__title">Cat Energy  PRO 1000 г</h3>
           </a>
           <table class="goods__table">
@@ -157,10 +156,10 @@
               <td class="goods__cell-value">1000 Р.</td>
             </tr>
           </table>
-          <a class="goods__button button" href="#">Заказать</a>
+          <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <article class="catalog__goods goods">
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с гречкой 500гр">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
@@ -172,7 +171,7 @@
             </picture>
           </a>
           <a class="goods__link" href="#">
-            <h3 class="goods__title">Cat Energy  Slim 500 г</h3>
+            <h3 class="goods__title" title="Товар - корм с гречкой 500гр">Cat Energy  Slim 500 г</h3>
           </a>
           <table class="goods__table">
             <tr class="goods__row">
@@ -188,10 +187,10 @@
               <td class="goods__cell-value">400 Р.</td>
             </tr>
           </table>
-          <a class="goods__button button" href="#">Заказать</a>
+          <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <article class="catalog__goods goods goods--even">
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с гречкой 1000гр">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
@@ -202,7 +201,7 @@
               <img class="goods__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Корм с гречкой">
             </picture>
           </a>
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с гречкой 1000гр">
             <h3 class="goods__title">Cat Energy  Slim 1000 г</h3>
           </a>
           <table class="goods__table">
@@ -219,10 +218,10 @@
               <td class="goods__cell-value">700 Р.</td>
             </tr>
           </table>
-          <a class="goods__button button" href="#">Заказать</a>
+          <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <article class="catalog__goods goods">
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с рисом 500гр">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
@@ -233,7 +232,7 @@
               <img class="goods__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Корм с рисом">
             </picture>
           </a>
-          <a class="goods__link" href="#">
+          <a class="goods__link" href="#" title="Товар - корм с рисом 500гр">
             <h3 class="goods__title">Cat Energy  Slim 500 г</h3>
           </a>
           <table class="goods__table">
@@ -250,12 +249,12 @@
               <td class="goods__cell-value">500 Р.</td>
             </tr>
             </table>
-            <a class="goods__button button" href="#">Заказать</a>
+            <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <div class="catalog__range">
           <p class="catalog__text-strong"><strong>Показать еще 100500 товаров</strong></p>
           <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog__button  catalog__button--grey" href="">Показать все</a>
+          <a class="catalog__button  catalog__button--grey" href="" title="Кнопка - показать все товары">Показать все</a>
         </div>
       </section>
       <section class="additional-catalog">
@@ -269,7 +268,7 @@
                 <td class="additional-goods__cell-value">200 p.</td>
               </tr>
             </table>
-            <a class="additional-goods__button button" href="#">Заказать</a>
+            <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
           </div>
           <div class="additional-catalog__goods additional-goods">
             <table class="additional-goods__table">
@@ -279,7 +278,7 @@
                 <td class="additional-goods__cell-value"> 50 p.</td>
               </tr>
             </table>
-            <a class="additional-goods__button button" href="#">Заказать</a>
+            <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
           </div>
           <div class="additional-catalog__goods additional-goods">
             <table class="additional-goods__table">
@@ -289,7 +288,7 @@
                 <td class="additional-goods__cell-value">100 p.</td>
               </tr>
             </table>
-            <a class="additional-goods__button button" href="#">Заказать</a>
+            <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
           </div>
           <div class="additional-catalog__goods additional-goods">
             <table class="additional-goods__table">
@@ -299,7 +298,7 @@
                 <td class="additional-goods__cell-value">300 p.</td>
               </tr>
             </table>
-            <a class="additional-goods__button button" href="#">Заказать</a>
+            <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
           </div>
         </div>
         <div class="additional-catalog__gift gift">
@@ -309,51 +308,51 @@
       </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__map-wrapper">
-          <div class="page-footer__contacts contacts">
-            <b class="contacts__notification">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
-            <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 <div class="contacts__text-town contacts__text-town--space">Санкт-Петербург</div></address>
-          </div>
-          <div class="page-footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715867313!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1534102256961" class="page-footer__iframe"></iframe>
-          </div>
+      <div class="page-footer__map-wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__notification">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+          <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 <div class="contacts__text-town contacts__text-town--space">Санкт-Петербург</div></address>
         </div>
-        <div class="page-footer__wrapper">
-          <div class="page-footer__logo"></div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon-vkontakte" width="20" height="20">
-                  <use xlink:href="#icon-vk-mobile"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon-instagram" width="20" height="20">
-                  <use xlink:href="#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg class="social__icon-facebook" width="20" height="20">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="page-footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715867313!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1534102256961" class="page-footer__iframe" title="Интерактивная карта"></iframe>
         </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo-icon" width="27" height="35">
-              <use xlink:href="#htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
-        </div>
-      </footer>
+      </div>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html" title="Логотип"></a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" title="Кнопка - вконтакте">
+              <svg class="social__icon-vkontakte" width="20" height="20">
+                <use xlink:href="#icon-vk-mobile"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Кнопка - инстаграмм">
+              <svg class="social__icon-instagram" width="20" height="20">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Кнопка - фэйсбук ">
+              <svg class="social__icon-facebook" width="20" height="20">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка на сайт htmlacademy">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка-картинка на сайт htmlacademy">
+          <svg class="copyright__logo-icon" viewBox="0 0 50 65">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

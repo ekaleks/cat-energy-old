@@ -15,16 +15,16 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     imagemin: {
-       images: {
-         options: {
-           optimizationLevel: 3,
-           progressive: true
-         },
-         files: [{
-           expand: true,
-           src: ["source/img/**/*.{png,jpg,svg}"]
-         }]
-       }
+      images: {
+        options: {
+          optimizationLevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg,svg}"]
+        }]
+      }
     },
 
     cwebp: {
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
           cwd: "source",
           src: ["fonts/**/*.{woff2,woff}",
                 "img/**.{png,jpg,svg,webp}",
-                "js/**.{js}"
+                "js/**.js"
           ],
           dest: "build"
         }]
@@ -112,7 +112,7 @@ module.exports = function(grunt) {
         },
         dist: {
           src: "build/css/*.css"
-        }  
+        }
       }
     },
 
