@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "cssnano": "^4.0.5",
+    "normalize.css": "^8.0.0",
     "pixrem": "^4.0.1"
   }
 }
