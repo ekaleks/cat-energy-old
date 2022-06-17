@@ -5,7 +5,7 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^8.3.0",
+    "autoprefixer": "^9.8.8",
     "grunt": "^1.5.3",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^2.0.1",
@@ -25,6 +25,16 @@
     "stylelint": "^14.9.1",
     "stylelint-config-htmlacademy": "0.1.x"
   },
+  "overrides":{
+	"semver-regex": "3.1.4",
+	"trim-newlines": "3.0.1",
+    "deep-extend": "0.5.1",
+    "glob-parent": "5.1.2",
+    "merge": "2.1.1",
+    "nth-check": "2.0.1",
+    "minimist": "1.2.6",
+	"postcss": "7.0.36"
+}, 
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
